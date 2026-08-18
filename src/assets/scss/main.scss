@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    @apply bg-page font-sans text-h5 text-ink;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body.is-locked {
+    @apply overflow-hidden;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-container px-4 sm:px-6 xl:px-8;
+  }
+
+  .nav-link {
+    @apply transition-colors duration-150 hover:text-brand-hover;
+  }
+}
+
+// во Vue 2 классы перехода `-enter` / `-leave-to`, без `-from`
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
