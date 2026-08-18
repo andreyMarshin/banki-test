@@ -3,6 +3,8 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue2'
 
 export default defineConfig({
+  // на GitHub Pages сайт лежит в подпапке, локально база остаётся корневой
+  base: process.env.GITHUB_ACTIONS ? '/banki-test/' : '/',
   plugins: [vue()],
   resolve: {
     alias: {

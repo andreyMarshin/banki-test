@@ -2,6 +2,8 @@
 
 Тестовое задание — каталог интернет-магазина по [макету в Figma](https://www.figma.com/file/6LxPDEsauEGanhR2nDW68X/Banki.shop?node-id=0%3A1).
 
+Демо: https://andreymarshin.github.io/banki-test/
+
 ## Как запустить
 
 Нужен Node 16 или новее, версия лежит в `.nvmrc`.
